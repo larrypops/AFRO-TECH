@@ -146,6 +146,11 @@ p {
   display: none;
 }
 
+.mobile-nav-shell {
+  position: relative;
+  display: contents;
+}
+
 .mobile-menu-toggle {
   width: 52px;
   height: 52px;
@@ -168,6 +173,10 @@ p {
 }
 
 .mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   border-top: 1px solid rgba(215, 16, 22, 0.08);
   background: rgba(255, 250, 248, 0.98);
 }
@@ -335,22 +344,25 @@ p {
   position: relative;
 }
 
-.image-stack img,
-.service-card img,
-.portrait-frame img {
+.media-frame {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+}
+
+.media-img {
   width: 100%;
   height: 100%;
-  min-height: 420px;
   object-fit: cover;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
 
-.image-stack img:first-child {
+.hero-image-tall {
   min-height: 640px;
 }
 
-.image-stack img:last-child {
+.hero-image-offset {
   min-height: 520px;
   transform: translateY(44px);
 }
@@ -456,7 +468,7 @@ p {
   order: 2;
 }
 
-.service-card.reverse img {
+.service-card.reverse .media-frame {
   order: 1;
 }
 
@@ -657,14 +669,12 @@ p {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  animation: fade-up 700ms ease forwards;
+  transition: opacity 500ms ease, transform 500ms ease;
 }
 
-@keyframes fade-up {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1120px) {
@@ -699,7 +709,7 @@ p {
   }
 
   .service-card.reverse .service-card-copy,
-  .service-card.reverse img {
+  .service-card.reverse .media-frame {
     order: initial;
   }
 }
@@ -761,14 +771,14 @@ p {
     gap: 14px;
   }
 
-  .image-stack img:first-child,
-  .image-stack img:last-child,
-  .service-card img,
-  .portrait-frame img {
+  .hero-image-tall,
+  .hero-image-offset,
+  .service-card .media-frame,
+  .portrait-frame .media-frame {
     min-height: 320px;
   }
 
-  .image-stack img:last-child {
+  .hero-image-offset {
     transform: none;
   }
 

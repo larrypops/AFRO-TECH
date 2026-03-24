@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { cities, displayPhone, phoneNumber, whatsappUrl } from "@/lib/site-data";
 
@@ -7,7 +8,12 @@ export function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-brand-head">
-            <img src="/images/logo.png" alt="Logo AFRO-TECH" />
+            <Image
+              src="/images/logo.png"
+              alt="Logo AFRO-TECH"
+              width={58}
+              height={58}
+            />
             <strong className="brand-name">
               <span className="brand-afro">AFRO-</span>
               <span className="brand-tech">TECH</span>

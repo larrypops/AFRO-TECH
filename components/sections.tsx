@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Reveal } from "@/components/reveal";
+import { SiteImage } from "@/components/site-image";
 import {
   cities,
   displayPhone,
@@ -14,7 +16,7 @@ export function HomeSections() {
     <>
       <section className="hero section">
         <div className="container grid-2 hero-grid">
-          <div className="hero-copy reveal">
+          <Reveal className="hero-copy">
             <span className="eyebrow">Intervention rapide au Cameroun</span>
             <h1>
               Electricien et plombier de confiance a Douala, Yaounde, Bafoussam,
@@ -52,30 +54,34 @@ export function HomeSections() {
                 <span>A Douala, Yaounde, Bafoussam, Dschang et autres villes</span>
               </div>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="hero-visual reveal">
+          <Reveal className="hero-visual">
             <div className="image-stack">
-              <img
+              <SiteImage
                 src="/images/electricite-4.JPG"
                 alt="Technicien electricite en intervention au Cameroun"
+                priority
+                className="hero-image-tall"
               />
-              <img
+              <SiteImage
                 src="/images/plomberie-4.JPG"
                 alt="Intervention plomberie sanitaire au Cameroun"
+                priority
+                className="hero-image-offset"
               />
             </div>
             <div className="hero-badge">
               <strong>AFRO-TECH</strong>
               <span>Electricite • Plomberie • Depannage</span>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="section problem-section">
         <div className="container">
-          <div className="section-heading reveal">
+          <Reveal className="section-heading">
             <span className="eyebrow">Pourquoi agir vite</span>
             <h2>
               Pannes electriques, fuites d&apos;eau et installations
@@ -85,48 +91,48 @@ export function HomeSections() {
               Une panne electrique ou une fuite non traitee peut rapidement
               provoquer des dommages et perturber votre activite.
             </p>
-          </div>
+          </Reveal>
           <div className="problem-grid">
-            <article className="feature-card reveal">
+            <Reveal className="feature-card" as="article">
               <span className="card-kicker">Securite</span>
               <h3>Electricite</h3>
               <p>
                 Pannes, disjonctions, branchements a reprendre, eclairage
                 defectueux et travaux de mise en securite.
               </p>
-            </article>
-            <article className="feature-card reveal">
+            </Reveal>
+            <Reveal className="feature-card" as="article">
               <span className="card-kicker">Confort</span>
               <h3>Plomberie</h3>
               <p>
                 Fuites, canalisations bouchees, robinetterie, sanitaires,
                 evacuation et alimentation en eau.
               </p>
-            </article>
-            <article className="feature-card reveal">
+            </Reveal>
+            <Reveal className="feature-card" as="article">
               <span className="card-kicker">Reactivite</span>
               <h3>Urgence et fiabilite</h3>
               <p>
                 Nous privilegions des interventions claires, propres et
                 efficaces pour remettre vos installations en service.
               </p>
-            </article>
+            </Reveal>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <div className="section-heading reveal">
+          <Reveal className="section-heading">
             <span className="eyebrow">Nos services</span>
             <h2>
               Deux expertises complementaires pour traiter vos besoins avec
               serieux
             </h2>
-          </div>
+          </Reveal>
 
           <div className="service-showcase">
-            <article className="service-card reveal">
+            <Reveal className="service-card">
               <div className="service-card-copy">
                 <h3>Electricite</h3>
                 <p>
@@ -143,10 +149,10 @@ export function HomeSections() {
                   Decouvrir le service
                 </Link>
               </div>
-              <img src="/images/electricite-1.JPG" alt="Service electricien" />
-            </article>
+              <SiteImage src="/images/electricite-1.JPG" alt="Service electricien" />
+            </Reveal>
 
-            <article className="service-card reveal reverse">
+            <Reveal className="service-card reverse">
               <div className="service-card-copy">
                 <h3>Plomberie</h3>
                 <p>
@@ -162,8 +168,8 @@ export function HomeSections() {
                   Decouvrir le service
                 </Link>
               </div>
-              <img src="/images/plomberie-1.JPG" alt="Service plomberie" />
-            </article>
+              <SiteImage src="/images/plomberie-1.JPG" alt="Service plomberie" />
+            </Reveal>
           </div>
         </div>
       </section>
@@ -201,7 +207,7 @@ export function ServicePage({
   return (
     <section className="section">
       <div className="container grid-2 detail-grid">
-        <div className="detail-copy reveal">
+        <Reveal className="detail-copy">
           <span className="eyebrow">{eyebrow}</span>
           <h1 className="page-title">{title}</h1>
           <p>{intro}</p>
@@ -219,11 +225,11 @@ export function ServicePage({
               {secondaryCta.label}
             </a>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="portrait-frame reveal">
-          <img src={image} alt={imageAlt} />
-        </div>
+        <Reveal className="portrait-frame">
+          <SiteImage src={image} alt={imageAlt} />
+        </Reveal>
       </div>
     </section>
   );
@@ -233,24 +239,24 @@ export function ZonesPreview() {
   return (
     <section className="section alt-section">
       <div className="container">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <span className="eyebrow">Zones d&apos;intervention</span>
           <h2>Nous intervenons dans les principales villes du Cameroun</h2>
           <p>
             AFRO-TECH accompagne ses clients a Douala, Yaounde, Bafoussam,
             Dschang et dans d&apos;autres villes du Cameroun.
           </p>
-        </div>
+        </Reveal>
         <div className="city-grid">
           {cities.map((city) => (
-            <article className="city-card reveal" key={city.name}>
+            <Reveal className="city-card" key={city.name} as="article">
               <h3>{city.name}</h3>
               <p>{city.description}</p>
               <span>{city.detail}</span>
-            </article>
+            </Reveal>
           ))}
         </div>
-        <div className="zones-cta reveal">
+        <Reveal className="zones-cta">
           <p>
             Vous etes dans une autre ville ? Contactez-nous pour verifier
             rapidement la possibilite d&apos;intervention.
@@ -258,7 +264,7 @@ export function ZonesPreview() {
           <Link className="button button-primary" href="/zones">
             Voir les zones desservies
           </Link>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -268,16 +274,16 @@ export function TestimonialsSection() {
   return (
     <section className="section">
       <div className="container">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <span className="eyebrow">Confiance</span>
           <h2>Des messages clairs pour rassurer avant meme le premier contact</h2>
-        </div>
+        </Reveal>
         <div className="testimonial-grid">
           {testimonials.map((testimonial) => (
-            <article className="testimonial reveal" key={testimonial.author}>
+            <Reveal className="testimonial" key={testimonial.author} as="article">
               <p>&quot;{testimonial.quote}&quot;</p>
               <strong>{testimonial.author}</strong>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -289,7 +295,7 @@ export function AboutPreview() {
   return (
     <section className="section about-section">
       <div className="container grid-2 detail-grid">
-        <div className="detail-copy reveal">
+        <Reveal className="detail-copy">
           <span className="eyebrow">A propos</span>
           <h2>
             Un service serieux pour vos travaux et depannages en electricite et
@@ -307,8 +313,8 @@ export function AboutPreview() {
           <Link className="text-link" href="/a-propos">
             En savoir plus
           </Link>
-        </div>
-        <div className="stats-panel reveal">
+        </Reveal>
+        <Reveal className="stats-panel">
           <div className="stat">
             <strong>Deux services essentiels</strong>
             <span>Electricite et plomberie pour habitat, commerce et chantier</span>
@@ -321,7 +327,7 @@ export function AboutPreview() {
             <strong>Une priorite</strong>
             <span>Vous apporter une solution fiable, rapide et adaptee</span>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -330,7 +336,7 @@ export function AboutPreview() {
 export function FinalCta() {
   return (
     <section className="section final-cta">
-      <div className="container final-cta-box reveal">
+      <Reveal className="container final-cta-box">
         <div>
           <span className="eyebrow">Appel a l&apos;action</span>
           <h2>Besoin d&apos;un electricien ou d&apos;un plombier au Cameroun ?</h2>
@@ -352,7 +358,7 @@ export function FinalCta() {
             Ouvrir WhatsApp
           </a>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
@@ -361,7 +367,7 @@ export function ContactSection() {
   return (
     <section className="section">
       <div className="container contact-grid">
-        <div className="detail-copy reveal">
+        <Reveal className="detail-copy">
           <span className="eyebrow">Contact</span>
           <h2>Demandez votre devis gratuit</h2>
           <p>
@@ -378,9 +384,9 @@ export function ContactSection() {
               Cameroun
             </span>
           </div>
-        </div>
+        </Reveal>
 
-        <form className="contact-form reveal">
+        <Reveal className="contact-form" as="form">
           <label>
             Nom
             <input type="text" name="name" placeholder="Votre nom" />
@@ -404,7 +410,7 @@ export function ContactSection() {
           <button type="button" className="button button-primary">
             Envoyer la demande
           </button>
-        </form>
+        </Reveal>
       </div>
     </section>
   );

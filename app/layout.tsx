@@ -12,9 +12,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AFRO-TECH | Electricite et plomberie au Cameroun",
+  title: "AFRO-TECH | Électricité et plomberie au Cameroun",
   description:
-    "Entreprise d'electricite et plomberie au Cameroun. Intervention rapide a Douala, Yaounde, Bafoussam, Dschang et autres villes.",
+    "Entreprise d'électricité et plomberie au Cameroun. Intervention rapide à Douala, Yaoundé, Bafoussam, Dschang et autres villes.",
 };
 
 export default function RootLayout({

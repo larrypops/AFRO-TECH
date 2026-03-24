@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { AboutPreview, FinalCta } from "@/components/sections";
 
 export const metadata: Metadata = {
-  title: "A propos | AFRO-TECH",
+  title: "À propos | AFRO-TECH",
   description:
-    "Decouvrez AFRO-TECH, entreprise d'electricite et plomberie au Cameroun.",
+    "Découvrez AFRO-TECH, entreprise d'électricité et plomberie au Cameroun.",
 };
 
 export default function AproposPage() {

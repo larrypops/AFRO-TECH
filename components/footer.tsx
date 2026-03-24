@@ -20,15 +20,15 @@ export function Footer() {
             </strong>
           </div>
           <p>
-            AFRO-TECH propose des services d&apos;electricite et de plomberie au
-            Cameroun avec une approche serieuse, reactive et orientee resultat.
+            AFRO-TECH propose des services d&apos;électricité et de plomberie au
+            Cameroun avec une approche sérieuse, réactive et orientée résultat.
           </p>
         </div>
 
         <div>
           <h3>Liens rapides</h3>
           <Link href="/">Accueil</Link>
-          <Link href="/electricite">Electricite</Link>
+          <Link href="/electricite">Électricité</Link>
           <Link href="/plomberie">Plomberie</Link>
           <Link href="/contact">Contact</Link>
         </div>

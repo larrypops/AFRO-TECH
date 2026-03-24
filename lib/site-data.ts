@@ -6,53 +6,53 @@ export const cities = [
   {
     name: "Douala",
     description: "Interventions rapides pour logements, commerces, bureaux et chantiers.",
-    detail: "Disponibilite selon votre zone et votre besoin",
+    detail: "Disponibilité selon votre zone et votre besoin",
   },
   {
-    name: "Yaounde",
-    description: "Services installation, maintenance et depannage pour particuliers et professionnels.",
+    name: "Yaoundé",
+    description: "Services installation, maintenance et dépannage pour particuliers et professionnels.",
     detail: "Accompagnement pour habitat, commerce et bureaux",
   },
   {
     name: "Bafoussam",
     description: "Travaux fiables pour habitat, locations, locaux techniques et points de vente.",
-    detail: "Interventions soignees pour particuliers et professionnels",
+    detail: "Interventions soignées pour particuliers et professionnels",
   },
   {
     name: "Dschang",
-    description: "Depannage, installation et pose d'equipements pour differents types de besoins.",
-    detail: "Prise de contact simple par telephone ou WhatsApp",
+    description: "Dépannage, installation et pose d'équipements pour différents types de besoins.",
+    detail: "Prise de contact simple par téléphone ou WhatsApp",
   },
 ];
 
 export const electricalItems = [
-  "Tableaux electriques et protections",
-  "Prises, interrupteurs et eclairage",
+  "Tableaux électriques et protections",
+  "Prises, interrupteurs et éclairage",
   "Recherche de panne et remplacement de composants",
-  "Maintenance preventive pour locaux professionnels",
+  "Maintenance préventive pour locaux professionnels",
 ];
 
 export const plumbingItems = [
-  "Detection et reparation de fuite",
-  "Debouchage canalisations et entretien",
+  "Détection et réparation de fuite",
+  "Débouchage canalisations et entretien",
   "Pose de lavabos, WC, robinetterie, douche",
-  "Remise en etat apres panne ou casse",
+  "Remise en état après panne ou casse",
 ];
 
 export const testimonials = [
   {
     quote:
-      "Intervention rapide et travail soigne pour une panne electrique dans notre boutique a Douala. Le contact a ete simple et le resultat tres professionnel.",
+      "Intervention rapide et travail soigné pour une panne électrique dans notre boutique à Douala. Le contact a été simple et le résultat très professionnel.",
     author: "Commerce local, Douala",
   },
   {
     quote:
-      "La fuite a ete reparee rapidement et les sanitaires remplaces proprement. La communication etait claire du debut a la fin.",
-    author: "Cliente, Yaounde",
+      "La fuite a été réparée rapidement et les sanitaires remplacés proprement. La communication était claire du début à la fin.",
+    author: "Cliente, Yaoundé",
   },
   {
     quote:
-      "On sent une vraie organisation, avec une presentation serieuse et un service qui inspire confiance des les premiers echanges.",
+      "On sent une vraie organisation, avec une présentation sérieuse et un service qui inspire confiance dès les premiers échanges.",
     author: "Gestionnaire immobilier, Bafoussam",
   },
 ];

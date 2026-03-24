@@ -5,10 +5,10 @@ import { displayPhone, phoneNumber } from "@/lib/site-data";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/electricite", label: "Electricite" },
+  { href: "/electricite", label: "Électricité" },
   { href: "/plomberie", label: "Plomberie" },
   { href: "/zones", label: "Zones" },
-  { href: "/a-propos", label: "A propos" },
+  { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },
 ];
 

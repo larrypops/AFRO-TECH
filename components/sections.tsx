@@ -19,13 +19,13 @@ export function HomeSections() {
           <Reveal className="hero-copy">
             <span className="eyebrow">Intervention rapide au Cameroun</span>
             <h1>
-              Electricien et plombier de confiance a Douala, Yaounde, Bafoussam,
+              Électricien et plombier de confiance à Douala, Yaoundé, Bafoussam,
               Dschang et dans d&apos;autres villes du Cameroun
             </h1>
             <p className="lead">
               AFRO-TECH accompagne particuliers, entreprises, commerces et
               chantiers avec un service fiable, rapide et professionnel en
-              electricite et plomberie.
+              électricité et plomberie.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href={`tel:${phoneNumber}`}>
@@ -42,16 +42,16 @@ export function HomeSections() {
             </div>
             <div className="hero-proof">
               <div className="proof-chip">
-                <strong>Disponibilite rapide</strong>
-                <span>Une prise en charge simple et une intervention organisee</span>
+                <strong>Disponibilité rapide</strong>
+                <span>Une prise en charge simple et une intervention organisée</span>
               </div>
               <div className="proof-chip">
                 <strong>Devis gratuit</strong>
-                <span>Un premier echange clair par appel ou WhatsApp</span>
+                <span>Un premier échange clair par appel ou WhatsApp</span>
               </div>
               <div className="proof-chip">
                 <strong>Zones larges</strong>
-                <span>A Douala, Yaounde, Bafoussam, Dschang et autres villes</span>
+                <span>À Douala, Yaoundé, Bafoussam, Dschang et autres villes</span>
               </div>
             </div>
           </Reveal>
@@ -60,7 +60,7 @@ export function HomeSections() {
             <div className="image-stack">
               <SiteImage
                 src="/images/electricite-4.JPG"
-                alt="Technicien electricite en intervention au Cameroun"
+                alt="Technicien électricité en intervention au Cameroun"
                 priority
                 className="hero-image-tall"
               />
@@ -73,7 +73,7 @@ export function HomeSections() {
             </div>
             <div className="hero-badge">
               <strong>AFRO-TECH</strong>
-              <span>Electricite • Plomberie • Depannage</span>
+              <span>Électricité • Plomberie • Dépannage</span>
             </div>
           </Reveal>
         </div>
@@ -84,36 +84,36 @@ export function HomeSections() {
           <Reveal className="section-heading">
             <span className="eyebrow">Pourquoi agir vite</span>
             <h2>
-              Pannes electriques, fuites d&apos;eau et installations
-              defaillantes peuvent vite couter cher
+              Pannes électriques, fuites d&apos;eau et installations
+              défaillantes peuvent vite coûter cher
             </h2>
             <p>
-              Une panne electrique ou une fuite non traitee peut rapidement
-              provoquer des dommages et perturber votre activite.
+              Une panne électrique ou une fuite non traitée peut rapidement
+              provoquer des dommages et perturber votre activité.
             </p>
           </Reveal>
           <div className="problem-grid">
             <Reveal className="feature-card" as="article">
-              <span className="card-kicker">Securite</span>
-              <h3>Electricite</h3>
+              <span className="card-kicker">Sécurité</span>
+              <h3>Électricité</h3>
               <p>
-                Pannes, disjonctions, branchements a reprendre, eclairage
-                defectueux et travaux de mise en securite.
+                Pannes, disjonctions, branchements à reprendre, éclairage
+                défectueux et travaux de mise en sécurité.
               </p>
             </Reveal>
             <Reveal className="feature-card" as="article">
               <span className="card-kicker">Confort</span>
               <h3>Plomberie</h3>
               <p>
-                Fuites, canalisations bouchees, robinetterie, sanitaires,
-                evacuation et alimentation en eau.
+                Fuites, canalisations bouchées, robinetterie, sanitaires,
+                évacuation et alimentation en eau.
               </p>
             </Reveal>
             <Reveal className="feature-card" as="article">
-              <span className="card-kicker">Reactivite</span>
-              <h3>Urgence et fiabilite</h3>
+              <span className="card-kicker">Réactivité</span>
+              <h3>Urgence et fiabilité</h3>
               <p>
-                Nous privilegions des interventions claires, propres et
+                Nous privilégions des interventions claires, propres et
                 efficaces pour remettre vos installations en service.
               </p>
             </Reveal>
@@ -126,46 +126,46 @@ export function HomeSections() {
           <Reveal className="section-heading">
             <span className="eyebrow">Nos services</span>
             <h2>
-              Deux expertises complementaires pour traiter vos besoins avec
-              serieux
+              Deux expertises complémentaires pour traiter vos besoins avec
+              sérieux
             </h2>
           </Reveal>
 
           <div className="service-showcase">
             <Reveal className="service-card">
               <div className="service-card-copy">
-                <h3>Electricite</h3>
+                <h3>Électricité</h3>
                 <p>
-                  Installations electriques, depannages, remises en etat et
-                  operations de maintenance pour logements, commerces et
+                  Installations électriques, dépannages, remises en état et
+                  opérations de maintenance pour logements, commerces et
                   bureaux.
                 </p>
                 <ul>
                   <li>Installation de prises, tableaux et luminaires</li>
-                  <li>Diagnostic, recherche de panne et reparation</li>
+                  <li>Diagnostic, recherche de panne et réparation</li>
                   <li>Maintenance et fiabilisation des installations</li>
                 </ul>
                 <Link className="text-link" href="/electricite">
-                  Decouvrir le service
+                  Découvrir le service
                 </Link>
               </div>
-              <SiteImage src="/images/electricite-1.JPG" alt="Service electricien" />
+              <SiteImage src="/images/electricite-1.JPG" alt="Service électricien" />
             </Reveal>
 
             <Reveal className="service-card reverse">
               <div className="service-card-copy">
                 <h3>Plomberie</h3>
                 <p>
-                  Recherche de fuite, debouchage, remplacement
-                  d&apos;equipements, pose sanitaire et remise en etat.
+                  Recherche de fuite, débouchage, remplacement
+                  d&apos;équipements, pose sanitaire et remise en état.
                 </p>
                 <ul>
-                  <li>Fuites et depannages urgents</li>
+                  <li>Fuites et dépannages urgents</li>
                   <li>Installation de cuisine, salle d&apos;eau et sanitaires</li>
-                  <li>Entretien et remise en etat des reseaux</li>
+                  <li>Entretien et remise en état des réseaux</li>
                 </ul>
                 <Link className="text-link" href="/plomberie">
-                  Decouvrir le service
+                  Découvrir le service
                 </Link>
               </div>
               <SiteImage src="/images/plomberie-1.JPG" alt="Service plomberie" />
@@ -243,7 +243,7 @@ export function ZonesPreview() {
           <span className="eyebrow">Zones d&apos;intervention</span>
           <h2>Nous intervenons dans les principales villes du Cameroun</h2>
           <p>
-            AFRO-TECH accompagne ses clients a Douala, Yaounde, Bafoussam,
+            AFRO-TECH accompagne ses clients à Douala, Yaoundé, Bafoussam,
             Dschang et dans d&apos;autres villes du Cameroun.
           </p>
         </Reveal>
@@ -258,8 +258,8 @@ export function ZonesPreview() {
         </div>
         <Reveal className="zones-cta">
           <p>
-            Vous etes dans une autre ville ? Contactez-nous pour verifier
-            rapidement la possibilite d&apos;intervention.
+            Vous êtes dans une autre ville ? Contactez-nous pour vérifier
+            rapidement la possibilité d&apos;intervention.
           </p>
           <Link className="button button-primary" href="/zones">
             Voir les zones desservies
@@ -296,9 +296,9 @@ export function AboutPreview() {
     <section className="section about-section">
       <div className="container grid-2 detail-grid">
         <Reveal className="detail-copy">
-          <span className="eyebrow">A propos</span>
+          <span className="eyebrow">À propos</span>
           <h2>
-            Un service serieux pour vos travaux et depannages en electricite et
+            Un service sérieux pour vos travaux et dépannages en électricité et
             plomberie
           </h2>
           <p>
@@ -306,9 +306,9 @@ export function AboutPreview() {
             les travaux d&apos;installation avec une approche simple.
           </p>
           <p>
-            Nous mettons l&apos;accent sur la reactivite, le travail soigne et une
-            communication claire afin que chaque client sache a quoi
-            s&apos;attendre des le premier contact.
+            Nous mettons l&apos;accent sur la réactivité, le travail soigné et une
+            communication claire afin que chaque client sache à quoi
+            s&apos;attendre dès le premier contact.
           </p>
           <Link className="text-link" href="/a-propos">
             En savoir plus
@@ -317,15 +317,15 @@ export function AboutPreview() {
         <Reveal className="stats-panel">
           <div className="stat">
             <strong>Deux services essentiels</strong>
-            <span>Electricite et plomberie pour habitat, commerce et chantier</span>
+            <span>Électricité et plomberie pour habitat, commerce et chantier</span>
           </div>
           <div className="stat">
             <strong>Intervention dans plusieurs villes</strong>
-            <span>Douala, Yaounde, Bafoussam, Dschang et autres zones</span>
+            <span>Douala, Yaoundé, Bafoussam, Dschang et autres zones</span>
           </div>
           <div className="stat">
-            <strong>Une priorite</strong>
-            <span>Vous apporter une solution fiable, rapide et adaptee</span>
+            <strong>Une priorité</strong>
+            <span>Vous apporter une solution fiable, rapide et adaptée</span>
           </div>
         </Reveal>
       </div>
@@ -339,10 +339,10 @@ export function FinalCta() {
       <Reveal className="container final-cta-box">
         <div>
           <span className="eyebrow">Appel a l&apos;action</span>
-          <h2>Besoin d&apos;un electricien ou d&apos;un plombier au Cameroun ?</h2>
+          <h2>Besoin d&apos;un électricien ou d&apos;un plombier au Cameroun ?</h2>
           <p>
             Contactez-nous pour une intervention rapide, un devis gratuit ou
-            une prise de rendez-vous adaptee a votre besoin.
+            une prise de rendez-vous adaptée à votre besoin.
           </p>
         </div>
         <div className="hero-actions">
@@ -371,16 +371,16 @@ export function ContactSection() {
           <span className="eyebrow">Contact</span>
           <h2>Demandez votre devis gratuit</h2>
           <p>
-            Appelez-nous, ecrivez-nous sur WhatsApp ou laissez votre demande via
+            Appelez-nous, écrivez-nous sur WhatsApp ou laissez votre demande via
             le formulaire.
           </p>
           <div className="contact-list">
-            <a href={`tel:${phoneNumber}`}>Telephone: {displayPhone}</a>
+            <a href={`tel:${phoneNumber}`}>Téléphone: {displayPhone}</a>
             <a href={whatsappUrl} target="_blank" rel="noreferrer">
               WhatsApp: {displayPhone}
             </a>
             <span>
-              Zones: Douala, Yaounde, Bafoussam, Dschang et autres villes du
+              Zones: Douala, Yaoundé, Bafoussam, Dschang et autres villes du
               Cameroun
             </span>
           </div>
@@ -392,15 +392,15 @@ export function ContactSection() {
             <input type="text" name="name" placeholder="Votre nom" />
           </label>
           <label>
-            Telephone
+            Téléphone
             <input type="tel" name="phone" placeholder="+237..." />
           </label>
           <label>
             Service
-            <select name="service" defaultValue="Electricite">
-              <option>Electricite</option>
+            <select name="service" defaultValue="Électricité">
+              <option>Électricité</option>
               <option>Plomberie</option>
-              <option>Electricite + Plomberie</option>
+              <option>Électricité + Plomberie</option>
             </select>
           </label>
           <label>
@@ -418,29 +418,29 @@ export function ContactSection() {
 
 export const servicePageProps = {
   electricite: {
-    eyebrow: "Page electricite",
-    title: "Electricien a Douala, Yaounde, Bafoussam, Dschang et autres villes",
+    eyebrow: "Page électricité",
+    title: "Électricien à Douala, Yaoundé, Bafoussam, Dschang et autres villes",
     intro:
-      "AFRO-TECH prend en charge les installations neuves, les remises aux normes, les depannages urgents et la maintenance de vos reseaux electriques avec une approche centree sur la securite, la fiabilite et la qualite d'execution.",
+      "AFRO-TECH prend en charge les installations neuves, les remises aux normes, les dépannages urgents et la maintenance de vos réseaux électriques avec une approche centrée sur la sécurité, la fiabilité et la qualité d'exécution.",
     description:
-      "Que vous soyez un particulier, un gestionnaire d'immeuble, un responsable de commerce ou un professionnel du chantier, nous vous aidons a securiser vos installations et a retrouver un fonctionnement stable.",
+      "Que vous soyez un particulier, un gestionnaire d'immeuble, un responsable de commerce ou un professionnel du chantier, nous vous aidons à sécuriser vos installations et à retrouver un fonctionnement stable.",
     items: electricalItems,
     image: "/images/electricite-6.JPG",
-    imageAlt: "Travaux d'installation electrique en interieur",
+    imageAlt: "Travaux d'installation électrique en intérieur",
     primaryCta: { href: `tel:${phoneNumber}`, label: "Demander une intervention" },
     secondaryCta: { href: "/contact", label: "Demander un devis" },
   },
   plomberie: {
     eyebrow: "Page plomberie",
-    title: "Plombier a Douala, Yaounde, Bafoussam, Dschang et autres villes",
+    title: "Plombier à Douala, Yaoundé, Bafoussam, Dschang et autres villes",
     intro:
-      "Une fuite, une evacuation bouchee ou une installation sanitaire mal realisee peut rapidement perturber votre quotidien. Nous intervenons pour identifier le probleme, corriger la panne et remettre votre installation en bon etat.",
+      "Une fuite, une évacuation bouchée ou une installation sanitaire mal réalisée peut rapidement perturber votre quotidien. Nous intervenons pour identifier le problème, corriger la panne et remettre votre installation en bon état.",
     description:
-      "Nous realisons egalement les installations de cuisine, salle d'eau, toilettes, raccordements et remplacement d'equipements avec un rendu propre et durable.",
+      "Nous réalisons également les installations de cuisine, salle d'eau, toilettes, raccordements et remplacement d'équipements avec un rendu propre et durable.",
     items: plumbingItems,
     image: "/images/plomberie-6.JPG",
-    imageAlt: "Installation et depannage plomberie au Cameroun",
-    primaryCta: { href: whatsappUrl, label: "Parler a un technicien" },
+    imageAlt: "Installation et dépannage plomberie au Cameroun",
+    primaryCta: { href: whatsappUrl, label: "Parler à un technicien" },
     secondaryCta: { href: "/contact", label: "Demander un devis" },
   },
 };

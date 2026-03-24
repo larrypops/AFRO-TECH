@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { FinalCta, ServicePage, servicePageProps } from "@/components/sections";
 
 export const metadata: Metadata = {
-  title: "Electricite | AFRO-TECH",
+  title: "Électricité | AFRO-TECH",
   description:
-    "Services d'electricite, depannage, maintenance et installation a Douala, Yaounde, Bafoussam, Dschang et autres villes.",
+    "Services d'électricité, dépannage, maintenance et installation à Douala, Yaoundé, Bafoussam, Dschang et autres villes.",
 };
 
 export default function ElectricitePage() {

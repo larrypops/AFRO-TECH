@@ -4,7 +4,7 @@ import { FinalCta, ServicePage, servicePageProps } from "@/components/sections";
 export const metadata: Metadata = {
   title: "Plomberie | AFRO-TECH",
   description:
-    "Services de plomberie, fuites, debouchage et installation sanitaire a Douala, Yaounde, Bafoussam, Dschang et autres villes.",
+    "Services de plomberie, fuites, débouchage et installation sanitaire à Douala, Yaoundé, Bafoussam, Dschang et autres villes.",
 };
 
 export default function PlomberiePage() {

@@ -31,6 +31,8 @@ body {
     radial-gradient(circle at top left, rgba(215, 16, 22, 0.08), transparent 34%),
     radial-gradient(circle at top right, rgba(255, 210, 63, 0.18), transparent 24%),
     var(--bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -179,6 +181,7 @@ p {
   right: 0;
   border-top: 1px solid rgba(215, 16, 22, 0.08);
   background: rgba(255, 250, 248, 0.98);
+  box-shadow: 0 22px 48px rgba(23, 23, 23, 0.12);
 }
 
 .mobile-nav-inner {
@@ -207,6 +210,7 @@ p {
   font-weight: 700;
   cursor: pointer;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  text-align: center;
 }
 
 .button:hover {
@@ -298,6 +302,7 @@ p {
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(215, 16, 22, 0.08);
   box-shadow: var(--shadow);
+  min-height: 100%;
 }
 
 .proof-chip strong,
@@ -601,6 +606,10 @@ p {
   color: var(--text);
 }
 
+.contact-form textarea {
+  resize: vertical;
+}
+
 .site-footer {
   padding: 40px 0 54px;
   background: #141414;
@@ -708,6 +717,14 @@ p {
     align-items: flex-start;
   }
 
+  .hero-proof {
+    gap: 16px;
+  }
+
+  .hero-badge {
+    max-width: min(100%, 320px);
+  }
+
   .service-card.reverse .service-card-copy,
   .service-card.reverse .media-frame {
     order: initial;
@@ -716,11 +733,11 @@ p {
 
 @media (max-width: 720px) {
   .section {
-    padding: 64px 0;
+    padding: 56px 0;
   }
 
   .header-inner {
-    min-height: 76px;
+    min-height: 72px;
     gap: 12px;
   }
 
@@ -741,11 +758,11 @@ p {
   }
 
   .container {
-    width: min(100% - 20px, 1180px);
+    width: min(100% - 18px, 1180px);
   }
 
   .hero {
-    padding-top: 18px;
+    padding-top: 8px;
   }
 
   .hero-copy {
@@ -762,20 +779,20 @@ p {
   .section-heading p,
   .detail-copy p,
   .testimonial p {
-    font-size: 0.98rem;
-    line-height: 1.7;
+    font-size: 0.97rem;
+    line-height: 1.68;
   }
 
   .image-stack {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
   }
 
   .hero-image-tall,
   .hero-image-offset,
   .service-card .media-frame,
   .portrait-frame .media-frame {
-    min-height: 320px;
+    min-height: 280px;
   }
 
   .hero-image-offset {
@@ -789,7 +806,8 @@ p {
 
   .hero-badge {
     position: static;
-    margin-top: 16px;
+    margin-top: 14px;
+    width: 100%;
   }
 
   .proof-chip,
@@ -811,11 +829,11 @@ p {
   .feature-card,
   .city-card,
   .testimonial {
-    padding: 20px;
+    padding: 18px;
   }
 
   .service-card-copy {
-    padding: 8px 0 0;
+    padding: 4px 0 0;
   }
 
   .section-heading,
@@ -834,6 +852,48 @@ p {
     padding: 14px 16px;
   }
 
+  .contact-grid,
+  .detail-grid {
+    gap: 18px;
+  }
+
+  .hero-proof {
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .proof-chip strong {
+    font-size: 0.98rem;
+  }
+
+  .proof-chip span,
+  .hero-badge span {
+    font-size: 0.9rem;
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .feature-card h3,
+  .city-card h3,
+  .service-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .mobile-nav {
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+
+  .mobile-nav-inner {
+    gap: 8px;
+    padding: 14px 0 16px;
+  }
+
+  .mobile-nav a:not(.button) {
+    padding: 15px 16px;
+  }
+
   .button,
   .floating-whatsapp,
   .zones-cta .button {
@@ -849,6 +909,105 @@ p {
 
   .floating-whatsapp span {
     display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand img,
+  .footer-brand img {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    font-size: 0.74rem;
+  }
+
+  .hero-copy h1,
+  .page-title {
+    font-size: clamp(1.95rem, 10.5vw, 2.7rem);
+    margin-bottom: 14px;
+  }
+
+  .hero-actions,
+  .inline-actions {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .button {
+    min-height: 50px;
+    padding: 0 16px;
+  }
+
+  .hero-image-tall,
+  .hero-image-offset,
+  .service-card .media-frame,
+  .portrait-frame .media-frame {
+    min-height: 240px;
+  }
+
+  .hero-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .city-card,
+  .testimonial,
+  .service-card,
+  .contact-form,
+  .zones-cta,
+  .final-cta-box,
+  .stats-panel {
+    border-radius: 18px;
+  }
+
+  .contact-form,
+  .zones-cta,
+  .final-cta-box,
+  .feature-card,
+  .city-card,
+  .testimonial,
+  .service-card {
+    padding: 16px;
+  }
+
+  .portrait-frame {
+    padding: 12px;
+    border-radius: 24px;
+  }
+
+  .stat {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .footer-grid {
+    gap: 18px;
+  }
+
+  .site-footer {
+    padding: 32px 0 42px;
+  }
+
+  .floating-whatsapp {
+    right: 12px;
+    bottom: 12px;
   }
 }
 

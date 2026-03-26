@@ -34,13 +34,6 @@ export function HomeSections() {
               qualité avec une garantie de travail.
             </p>
 
-            <div className="hero-note">
-              <strong>Vente de matériel de plomberie et d&apos;électricité</strong>
-              <span>
-                Pour plus d&apos;informations, contactez-nous pour en savoir plus.
-              </span>
-            </div>
-
             <div className="hero-actions">
               <a className="button button-primary" href={`tel:${phoneNumber}`}>
                 Contactez-nous
@@ -187,6 +180,67 @@ export function HomeSections() {
                 </Link>
               </div>
               <SiteImage src="/images/plomberie-1.JPG" alt="Service plomberie" />
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="section material-section">
+        <div className="container">
+          <Reveal className="section-heading">
+            <span className="eyebrow">Vente de matériel</span>
+            <h2>Vente de matériel de plomberie et d&apos;électricité</h2>
+            <p>
+              Nous mettons aussi à votre disposition du matériel pour vos
+              travaux, vos remplacements, vos installations neuves et vos
+              besoins de maintenance, avec un accompagnement pour vous aider à
+              choisir les éléments adaptés à votre projet.
+            </p>
+          </Reveal>
+
+          <div className="material-grid">
+            <Reveal className="material-copy">
+              <div className="material-panel">
+                <span className="card-kicker">Disponibilité</span>
+                <h3>Équipements pour chantier, maison et maintenance</h3>
+                <p>
+                  AFRO-TECH propose du matériel de plomberie et d&apos;électricité
+                  pour les particuliers, les entreprises, les commerces et les
+                  chantiers.
+                </p>
+                <ul className="check-list">
+                  <li>Matériel électrique pour installation et maintenance</li>
+                  <li>Équipements de plomberie pour pose et remplacement</li>
+                  <li>Solutions adaptées aux besoins résidentiels et professionnels</li>
+                  <li>Conseils pratiques avant achat et installation</li>
+                </ul>
+              </div>
+
+              <div className="material-contact">
+                <strong>Pour plus d&apos;informations, contactez-nous</strong>
+                <span>{displayPhone}</span>
+                <span>{secondaryDisplayPhone}</span>
+              </div>
+            </Reveal>
+
+            <Reveal className="material-visual">
+              <div className="material-gallery">
+                <SiteImage
+                  src="/images/electricite-5.JPG"
+                  alt="Matériel et intervention électrique"
+                  className="material-photo-large"
+                />
+                <SiteImage
+                  src="/images/plomberie-5.JPG"
+                  alt="Matériel et installation de plomberie"
+                  className="material-photo-small"
+                />
+                <SiteImage
+                  src="/images/plomberie-7.JPG"
+                  alt="Équipement de plomberie sur chantier"
+                  className="material-photo-small"
+                />
+              </div>
             </Reveal>
           </div>
         </div>

@@ -261,6 +261,19 @@ p {
   padding-top: 28px;
 }
 
+.hero-copy-full {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 38px 42px;
+  border-radius: 36px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 210, 63, 0.2), transparent 28%),
+    radial-gradient(circle at left center, rgba(215, 16, 22, 0.08), transparent 34%),
+    rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(215, 16, 22, 0.08);
+  box-shadow: var(--shadow);
+}
+
 .hero-copy h1,
 .page-title {
   margin: 0 0 18px;
@@ -274,14 +287,6 @@ p {
   max-width: 62ch;
 }
 
-.hero-service-panels {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 26px;
-}
-
-.hero-service-panel,
 .hero-note {
   padding: 22px;
   border-radius: 24px;
@@ -290,67 +295,10 @@ p {
   box-shadow: var(--shadow);
 }
 
-.hero-service-panel {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 245, 245, 0.94));
-}
-
-.hero-service-panel.accent {
-  background:
-    linear-gradient(180deg, rgba(255, 250, 244, 0.98), rgba(255, 255, 255, 0.94));
-}
-
-.hero-service-kicker {
-  display: inline-flex;
-  margin-bottom: 14px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(215, 16, 22, 0.08);
-  color: var(--primary);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.hero-service-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 10px;
-}
-
-.hero-service-list li {
-  position: relative;
-  padding-left: 24px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.hero-service-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-}
-
-.hero-service-note {
-  margin: 18px 0 0;
-  padding-top: 14px;
-  border-top: 1px solid rgba(215, 16, 22, 0.12);
-  color: var(--primary);
-  font-weight: 700;
-}
-
 .hero-note {
   display: grid;
   gap: 8px;
-  margin-top: 18px;
+  margin-top: 24px;
   background:
     radial-gradient(circle at right top, rgba(255, 210, 63, 0.22), transparent 40%),
     rgba(255, 255, 255, 0.92);
@@ -397,14 +345,12 @@ p {
   min-height: 100%;
 }
 
-.proof-chip strong,
-.hero-badge strong {
+.proof-chip strong {
   display: block;
   margin-bottom: 6px;
 }
 
-.proof-chip span,
-.hero-badge span {
+.proof-chip span {
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.6;
@@ -807,8 +753,7 @@ p {
   .hero-proof,
   .service-card,
   .service-card.reverse,
-  .final-cta-box,
-  .hero-service-panels {
+  .final-cta-box {
     grid-template-columns: 1fr;
   }
 
@@ -819,14 +764,6 @@ p {
   .zones-cta {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .hero-proof {
-    gap: 16px;
-  }
-
-  .hero-badge {
-    max-width: min(100%, 320px);
   }
 
   .service-card.reverse .service-card-copy,
@@ -877,6 +814,11 @@ p {
     padding-top: 0;
   }
 
+  .hero-copy-full {
+    padding: 28px 20px;
+    border-radius: 26px;
+  }
+
   .hero-copy h1,
   .page-title {
     font-size: clamp(2.1rem, 11vw, 3.4rem);
@@ -891,42 +833,14 @@ p {
     line-height: 1.68;
   }
 
-  .image-stack {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .hero-service-panels {
-    gap: 12px;
-    margin-top: 22px;
-  }
-
-  .hero-service-panel,
   .hero-note {
     padding: 18px;
     border-radius: 20px;
   }
 
-  .hero-image-tall,
-  .hero-image-offset,
-  .service-card .media-frame,
-  .portrait-frame .media-frame {
-    min-height: 280px;
-  }
-
-  .hero-image-offset {
-    transform: none;
-  }
-
   .hero-actions,
   .inline-actions {
     flex-direction: column;
-  }
-
-  .hero-badge {
-    position: static;
-    margin-top: 14px;
-    width: 100%;
   }
 
   .proof-chip,
@@ -989,8 +903,7 @@ p {
     font-size: 0.98rem;
   }
 
-  .proof-chip span,
-  .hero-badge span {
+  .proof-chip span {
     font-size: 0.9rem;
   }
 
@@ -1002,10 +915,6 @@ p {
   .city-card h3,
   .service-card h3 {
     font-size: 1.15rem;
-  }
-
-  .hero-service-list {
-    gap: 8px;
   }
 
   .mobile-nav {
@@ -1077,7 +986,6 @@ p {
     margin-top: 22px;
   }
 
-  .hero-service-panel,
   .hero-note {
     padding: 16px;
   }
@@ -1089,13 +997,6 @@ p {
   .button {
     min-height: 50px;
     padding: 0 16px;
-  }
-
-  .hero-image-tall,
-  .hero-image-offset,
-  .service-card .media-frame,
-  .portrait-frame .media-frame {
-    min-height: 240px;
   }
 
   .hero-proof {

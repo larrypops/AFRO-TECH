@@ -15,8 +15,8 @@ export function HomeSections() {
   return (
     <>
       <section className="hero section">
-        <div className="container grid-2 hero-grid">
-          <Reveal className="hero-copy">
+        <div className="container">
+          <Reveal className="hero-copy hero-copy-full">
             <span className="eyebrow">Électricité • Plomberie • Étude • Plans 2D</span>
             <h1>
               Une équipe dynamique et experte pour vos travaux d&apos;électricité
@@ -31,37 +31,6 @@ export function HomeSections() {
               Nous sommes déterminés à vous fournir des services de haute
               qualité avec une garantie de travail.
             </p>
-
-            <div className="hero-service-panels">
-              <article className="hero-service-panel">
-                <span className="hero-service-kicker">En d&apos;électricité</span>
-                <ul className="hero-service-list">
-                  <li>Étude</li>
-                  <li>Plan 2D</li>
-                  <li>Devis</li>
-                  <li>Installation électrique</li>
-                  <li>Installation des éclairages publics</li>
-                  <li>Maintenance</li>
-                  <li>Prestations diverses</li>
-                </ul>
-                <p className="hero-service-note">Avec les photos</p>
-              </article>
-
-              <article className="hero-service-panel accent">
-                <span className="hero-service-kicker">En plomberie</span>
-                <ul className="hero-service-list">
-                  <li>Étude</li>
-                  <li>Plan 2D</li>
-                  <li>Devis pour l&apos;installation des pompes électriques</li>
-                  <li>Installation des pompes électriques</li>
-                  <li>Maintenance</li>
-                  <li>Installation des chauffe-eaux électriques</li>
-                  <li>Installation des chauffe-eaux solaires</li>
-                  <li>Prestations diverses</li>
-                </ul>
-                <p className="hero-service-note">Avec les photos</p>
-              </article>
-            </div>
 
             <div className="hero-note">
               <strong>Vente de matériel de plomberie et d&apos;électricité</strong>
@@ -97,27 +66,6 @@ export function HomeSections() {
                 <strong>Deux numéros directs</strong>
                 <span>655 23 04 40 / 672 22 57 03</span>
               </div>
-            </div>
-          </Reveal>
-
-          <Reveal className="hero-visual">
-            <div className="image-stack">
-              <SiteImage
-                src="/images/electricite-4.JPG"
-                alt="Technicien électricité en intervention au Cameroun"
-                priority
-                className="hero-image-tall"
-              />
-              <SiteImage
-                src="/images/plomberie-4.JPG"
-                alt="Intervention plomberie sanitaire au Cameroun"
-                priority
-                className="hero-image-offset"
-              />
-            </div>
-            <div className="hero-badge">
-              <strong>AFRO-TECH</strong>
-              <span>Installations • Réparation • Maintenance • Matériel</span>
             </div>
           </Reveal>
         </div>

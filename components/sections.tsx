@@ -185,10 +185,27 @@ export function HomeSections() {
                   bureaux.
                 </p>
                 <ul>
+                  <li>Étude et plan 2D</li>
+                  <li>Devis et préparation technique</li>
                   <li>Installation de prises, tableaux et luminaires</li>
+                  <li>Installation des éclairages publics</li>
                   <li>Diagnostic, recherche de panne et réparation</li>
                   <li>Maintenance et fiabilisation des installations</li>
                 </ul>
+                <div className="service-plan-gallery">
+                  <SiteImage
+                    src="/images/plan2d-1.JPG"
+                    alt="Plan 2D pour projet d'électricité"
+                    sizes="(max-width: 720px) 50vw, 180px"
+                    className="plan-thumb"
+                  />
+                  <SiteImage
+                    src="/images/plan2d-2.JPG"
+                    alt="Schéma technique 2D pour installation électrique"
+                    sizes="(max-width: 720px) 50vw, 180px"
+                    className="plan-thumb"
+                  />
+                </div>
                 <Link className="text-link" href="/electricite">
                   Découvrir le service
                 </Link>
@@ -204,10 +221,29 @@ export function HomeSections() {
                   d&apos;équipements, pose sanitaire et remise en état.
                 </p>
                 <ul>
+                  <li>Étude et plan 2D</li>
+                  <li>Devis pour l&apos;installation des pompes électriques</li>
+                  <li>Installation des pompes électriques</li>
                   <li>Fuites et dépannages urgents</li>
+                  <li>Installation des chauffe-eaux électriques</li>
+                  <li>Installation des chauffe-eaux solaires</li>
                   <li>Installation de cuisine, salle d&apos;eau et sanitaires</li>
                   <li>Entretien et remise en état des réseaux</li>
                 </ul>
+                <div className="service-plan-gallery">
+                  <SiteImage
+                    src="/images/plan2d-3.JPG"
+                    alt="Plan 2D pour projet de plomberie"
+                    sizes="(max-width: 720px) 50vw, 180px"
+                    className="plan-thumb"
+                  />
+                  <SiteImage
+                    src="/images/plan2d-2.JPG"
+                    alt="Schéma technique 2D pour installation de plomberie"
+                    sizes="(max-width: 720px) 50vw, 180px"
+                    className="plan-thumb"
+                  />
+                </div>
                 <Link className="text-link" href="/plomberie">
                   Découvrir le service
                 </Link>

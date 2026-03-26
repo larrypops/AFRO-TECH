@@ -7,6 +7,8 @@ import {
   electricalItems,
   phoneNumber,
   plumbingItems,
+  secondaryDisplayPhone,
+  serviceGalleries,
   testimonials,
   whatsappUrl,
 } from "@/lib/site-data";
@@ -133,27 +135,22 @@ export function HomeSections() {
                   bureaux.
                 </p>
                 <ul>
-                  <li>Étude et plan 2D</li>
-                  <li>Devis et préparation technique</li>
-                  <li>Installation de prises, tableaux et luminaires</li>
-                  <li>Installation des éclairages publics</li>
-                  <li>Diagnostic, recherche de panne et réparation</li>
-                  <li>Maintenance et fiabilisation des installations</li>
+                  {electricalItems.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ul>
                 <div className="service-plan-gallery">
-                  <SiteImage
-                    src="/images/plan2d-1.JPG"
-                    alt="Plan 2D pour projet d'électricité"
-                    sizes="(max-width: 720px) 50vw, 180px"
-                    className="plan-thumb"
-                  />
-                  <SiteImage
-                    src="/images/plan2d-2.JPG"
-                    alt="Schéma technique 2D pour installation électrique"
-                    sizes="(max-width: 720px) 50vw, 180px"
-                    className="plan-thumb"
-                  />
+                  {serviceGalleries.electricite.slice(3).map((image) => (
+                    <SiteImage
+                      key={image.src}
+                      src={image.src}
+                      alt={image.alt}
+                      sizes="(max-width: 720px) 50vw, 180px"
+                      className="plan-thumb"
+                    />
+                  ))}
                 </div>
+                <p className="service-inline-note">Avec les photos</p>
                 <Link className="text-link" href="/electricite">
                   Découvrir le service
                 </Link>
@@ -169,29 +166,22 @@ export function HomeSections() {
                   d&apos;équipements, pose sanitaire et remise en état.
                 </p>
                 <ul>
-                  <li>Étude et plan 2D</li>
-                  <li>Devis pour l&apos;installation des pompes électriques</li>
-                  <li>Installation des pompes électriques</li>
-                  <li>Fuites et dépannages urgents</li>
-                  <li>Installation des chauffe-eaux électriques</li>
-                  <li>Installation des chauffe-eaux solaires</li>
-                  <li>Installation de cuisine, salle d&apos;eau et sanitaires</li>
-                  <li>Entretien et remise en état des réseaux</li>
+                  {plumbingItems.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
                 </ul>
                 <div className="service-plan-gallery">
-                  <SiteImage
-                    src="/images/plan2d-3.JPG"
-                    alt="Plan 2D pour projet de plomberie"
-                    sizes="(max-width: 720px) 50vw, 180px"
-                    className="plan-thumb"
-                  />
-                  <SiteImage
-                    src="/images/plan2d-2.JPG"
-                    alt="Schéma technique 2D pour installation de plomberie"
-                    sizes="(max-width: 720px) 50vw, 180px"
-                    className="plan-thumb"
-                  />
+                  {serviceGalleries.plomberie.slice(3).map((image) => (
+                    <SiteImage
+                      key={image.src}
+                      src={image.src}
+                      alt={image.alt}
+                      sizes="(max-width: 720px) 50vw, 180px"
+                      className="plan-thumb"
+                    />
+                  ))}
                 </div>
+                <p className="service-inline-note">Avec les photos</p>
                 <Link className="text-link" href="/plomberie">
                   Découvrir le service
                 </Link>
@@ -219,6 +209,7 @@ export function ServicePage({
   items,
   image,
   imageAlt,
+  gallery,
   primaryCta,
   secondaryCta,
 }: {
@@ -229,6 +220,7 @@ export function ServicePage({
   items: string[];
   image: string;
   imageAlt: string;
+  gallery: { src: string; alt: string }[];
   primaryCta: { href: string; label: string };
   secondaryCta: { href: string; label: string };
 }) {
@@ -253,10 +245,27 @@ export function ServicePage({
               {secondaryCta.label}
             </a>
           </div>
+          <div className="service-meta">
+            <strong>Avec les photos</strong>
+            <span>Deux numéros: {displayPhone} / {secondaryDisplayPhone}</span>
+          </div>
         </Reveal>
 
-        <Reveal className="portrait-frame">
-          <SiteImage src={image} alt={imageAlt} />
+        <Reveal className="service-detail-visual">
+          <div className="portrait-frame">
+            <SiteImage src={image} alt={imageAlt} />
+          </div>
+          <div className="service-detail-gallery">
+            {gallery.map((item) => (
+              <SiteImage
+                key={item.src}
+                src={item.src}
+                alt={item.alt}
+                sizes="(max-width: 720px) 50vw, 220px"
+                className="service-detail-thumb"
+              />
+            ))}
+          </div>
         </Reveal>
       </div>
     </section>
@@ -455,6 +464,7 @@ export const servicePageProps = {
     items: electricalItems,
     image: "/images/electricite-6.JPG",
     imageAlt: "Travaux d'installation électrique en intérieur",
+    gallery: serviceGalleries.electricite,
     primaryCta: { href: `tel:${phoneNumber}`, label: "Demander une intervention" },
     secondaryCta: { href: "/contact", label: "Demander un devis" },
   },
@@ -468,6 +478,7 @@ export const servicePageProps = {
     items: plumbingItems,
     image: "/images/plomberie-6.JPG",
     imageAlt: "Installation et dépannage plomberie au Cameroun",
+    gallery: serviceGalleries.plomberie,
     primaryCta: { href: whatsappUrl, label: "Parler à un technicien" },
     secondaryCta: { href: "/contact", label: "Demander un devis" },
   },

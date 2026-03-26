@@ -17,16 +17,59 @@ export function HomeSections() {
       <section className="hero section">
         <div className="container grid-2 hero-grid">
           <Reveal className="hero-copy">
-            <span className="eyebrow">Intervention rapide au Cameroun</span>
+            <span className="eyebrow">Électricité • Plomberie • Étude • Plans 2D</span>
             <h1>
-              Électricien et plombier de confiance à Douala, Yaoundé, Bafoussam,
-              Dschang et dans d&apos;autres villes du Cameroun
+              Une équipe dynamique et experte pour vos travaux d&apos;électricité
+              et de plomberie
             </h1>
             <p className="lead">
-              AFRO-TECH accompagne particuliers, entreprises, commerces et
-              chantiers avec un service fiable, rapide et professionnel en
-              électricité et plomberie.
+              Nous sommes une équipe dynamique et experte dans le domaine de
+              l&apos;électricité et de la plomberie, avec plusieurs années
+              d&apos;expérience dans les installations, la réparation, la
+              maintenance des systèmes électriques et de plomberie, ainsi que
+              dans la réalisation des plans d&apos;électricité et de plomberie.
+              Nous sommes déterminés à vous fournir des services de haute
+              qualité avec une garantie de travail.
             </p>
+
+            <div className="hero-service-panels">
+              <article className="hero-service-panel">
+                <span className="hero-service-kicker">En d&apos;électricité</span>
+                <ul className="hero-service-list">
+                  <li>Étude</li>
+                  <li>Plan 2D</li>
+                  <li>Devis</li>
+                  <li>Installation électrique</li>
+                  <li>Installation des éclairages publics</li>
+                  <li>Maintenance</li>
+                  <li>Prestations diverses</li>
+                </ul>
+                <p className="hero-service-note">Avec les photos</p>
+              </article>
+
+              <article className="hero-service-panel accent">
+                <span className="hero-service-kicker">En plomberie</span>
+                <ul className="hero-service-list">
+                  <li>Étude</li>
+                  <li>Plan 2D</li>
+                  <li>Devis pour l&apos;installation des pompes électriques</li>
+                  <li>Installation des pompes électriques</li>
+                  <li>Maintenance</li>
+                  <li>Installation des chauffe-eaux électriques</li>
+                  <li>Installation des chauffe-eaux solaires</li>
+                  <li>Prestations diverses</li>
+                </ul>
+                <p className="hero-service-note">Avec les photos</p>
+              </article>
+            </div>
+
+            <div className="hero-note">
+              <strong>Vente de matériel de plomberie et d&apos;électricité</strong>
+              <span>
+                Pour plus d&apos;informations, contactez-nous pour en savoir plus.
+              </span>
+            </div>
+
             <div className="hero-actions">
               <a className="button button-primary" href={`tel:${phoneNumber}`}>
                 Contactez-nous
@@ -40,18 +83,19 @@ export function HomeSections() {
                 Demander sur WhatsApp
               </a>
             </div>
+
             <div className="hero-proof">
               <div className="proof-chip">
-                <strong>Disponibilité rapide</strong>
-                <span>Une prise en charge simple et une intervention organisée</span>
+                <strong>Garantie de travail</strong>
+                <span>Une exécution sérieuse, soignée et pensée pour durer.</span>
               </div>
               <div className="proof-chip">
-                <strong>Devis gratuit</strong>
-                <span>Un premier échange clair par appel ou WhatsApp</span>
+                <strong>Études et plans</strong>
+                <span>Étude, plan 2D, devis et accompagnement technique.</span>
               </div>
               <div className="proof-chip">
-                <strong>Zones larges</strong>
-                <span>À Douala, Yaoundé, Bafoussam, Dschang et autres villes</span>
+                <strong>Deux numéros directs</strong>
+                <span>655 23 04 40 / 672 22 57 03</span>
               </div>
             </div>
           </Reveal>
@@ -73,7 +117,7 @@ export function HomeSections() {
             </div>
             <div className="hero-badge">
               <strong>AFRO-TECH</strong>
-              <span>Électricité • Plomberie • Dépannage</span>
+              <span>Installations • Réparation • Maintenance • Matériel</span>
             </div>
           </Reveal>
         </div>

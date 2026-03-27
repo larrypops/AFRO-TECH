@@ -25,8 +25,8 @@ export function HomeSections() {
               et  plomberie
             </h1>
             <p className="lead">
-              Nous sommes une équipe dynamique et experte dans le domaine 
-              d&apos;électricité et de plomberie, avec plusieurs années
+              Nous sommes une équipe dynamique experte dans le domaine 
+              d&apos;électricité et plomberie, avec plusieurs années
               d&apos;expérience dans les installations, la réparation, la
               maintenance des systèmes électriques et plomberie, ainsi que
               dans la réalisation des plans d&apos;électricité et  plomberie.

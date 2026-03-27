@@ -22,16 +22,16 @@ export function HomeSections() {
             <span className="eyebrow">Électricité • Plomberie • Étude • Plans 2D</span>
             <h1>
               Une équipe dynamique et experte pour vos travaux d&apos;électricité
-              et de plomberie
+              et  plomberie
             </h1>
             <p className="lead">
               Nous sommes une équipe dynamique et experte dans le domaine 
               d&apos;électricité et de plomberie, avec plusieurs années
               d&apos;expérience dans les installations, la réparation, la
               maintenance des systèmes électriques et plomberie, ainsi que
-              dans la réalisation des plans d&apos;électricité et de plomberie.
+              dans la réalisation des plans d&apos;électricité et  plomberie.
               Nous sommes déterminés à vous fournir des services de haute
-              qualité avec une garantie de travail.
+              qualité avec la garantie du travail.
             </p>
 
             <div className="hero-actions">
